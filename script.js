@@ -11,13 +11,6 @@ document.querySelectorAll('.hero-btn').forEach(btn => {
     });
 });
 
-
-
-
-
-
-
-
 // =======================================
 // ACTIVE SECTION HIGHLIGHT ON RIGHT NAV
 // =======================================
@@ -81,4 +74,11 @@ window.addEventListener("scroll ", () => {
     } else {
         fixedImg.classList.remove("show ");
     }
+});
+// Toggle hamburger menu
+const dropdown = document.querySelector(".dropdown");
+const menu = document.querySelector(".dropdown-menu");
+
+dropdown.addEventListener("click", () => {
+    menu.classList.toggle("show-menu");
 });
